@@ -40,6 +40,11 @@ public class DriveTrain {
 		leftDrive2.configNominalOutputForward(0, 10);
 		rightDrive1.configNominalOutputReverse(0, 10);
 		rightDrive2.configNominalOutputReverse(0, 10);
+
+		leftDrive1.setInverted(true);
+		leftDrive2.setInverted(true);
+		rightDrive1.setInverted(true);
+		rightDrive2.setInverted(true);
 		
 		leftDrive2.set(ControlMode.Follower, 1);
 		rightDrive2.set(ControlMode.Follower, 3);
